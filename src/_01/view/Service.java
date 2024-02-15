@@ -1,6 +1,6 @@
-package view;
+package _01.view;
 
-import model.User;
+import _01.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
