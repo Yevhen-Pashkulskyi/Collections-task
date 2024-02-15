@@ -16,7 +16,8 @@ public class User {
     public String getEmail() {
         return email;
     }
-    public String tostring(){
+
+    public String tostring() {
         return "Ім'я: " + name + ", Е-пошта: " + email;
     }
 }
