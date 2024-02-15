@@ -1,4 +1,4 @@
-package controller;
+package view;
 
 import model.User;
 
@@ -12,7 +12,7 @@ public class Service {
         // Це колеця типу arraylist з створими об'єктами класу user
         List<User> users = new ArrayList<>();
         users.add(new User("Анна", "anna@gmail.com"));
-        users.add((new User("Богдан", "bogdan@yahoo.com"));
+        users.add(new User("Богдан", "bogdan@yahoo.com"));
         users.add(new User("Віктор", "viktor@outlook.com"));
         users.add(new User("Аліна", "alina@icloud.com"));
         users.add(new User("Дмитро", "dmytro@icloud.com"));
@@ -20,13 +20,13 @@ public class Service {
         return users;
     }
 
-    // цей метод друкує усіх користувачів
+    //     цей метод друкує усіх користувачів
     public void printUsers(List<User> users) {
         System.out.println("Користувачі чату: ");
         int count = 0;
         for (User user : users) {
             count++;
-            System.out.println(count + ")" + user);
+            System.out.println(count + ") " + user.tostring());
         }
     }
 
@@ -34,10 +34,10 @@ public class Service {
     // або видає помилку якщо не вірний індекс
     public void printUserByIndex(List<User> users, int index) {
         if (index > 0 && index < users.size()) {
-            System.out.println("ористувач за індексом " + index + ": "
-                    + users.get(index));
+            System.out.println("\nКористувач за індексом " + index + "\n"
+                    + users.get(index).tostring());
         } else {
-            System.out.println("Невірний індекс. Штдекс повинен бути від 0 до "
+            System.out.println("Невірний індекс. Індекс повинен бути від 0 до "
                     + (users.size() - 1));
         }
     }
