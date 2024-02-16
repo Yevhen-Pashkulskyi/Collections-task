@@ -1,4 +1,4 @@
-package _01.view;
+package _01.service;
 
 import _01.model.User;
 
