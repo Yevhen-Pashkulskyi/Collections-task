@@ -9,14 +9,6 @@ public class User {
         this.email = email;
     }
 
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public String getEmail() {
-//        return email;
-//    }
-
     public String tostring() {
         return "Ім'я: " + name + ", Е-пошта: " + email;
     }
